@@ -1,0 +1,109 @@
+/* Global
+   ========================================================================== */
+
+body, html {
+  background-color: #f9d010;
+  font-family: sans-serif;
+}
+
+/* Navigation
+   ========================================================================== */
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 0; 
+  padding: 8px;
+  height: 50px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ff4e00;
+  font-size: 30px;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.2s ease-out;
+}
+
+.nav-link:hover {
+  color: #98cbff;
+  text-transform: lowercase;
+  font-family: 'HukOpti', serif;
+  font-size: 36px;
+  text-shadow: 2px 1px black;
+  transition: all 0.2s ease-in;
+}
+
+/* Page
+   ========================================================================== */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-height: 500px;
+  width: auto;
+  transition: max-height 1s ease-out;
+  margin: 24px 0;
+}
+
+.logo-shrink {
+  max-height: 250px;
+  transition: max-height 1.25s ease-in;
+}
+
+.content-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  width: 60%;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.text-highlight {
+  background-color: #ffc4e8;
+}
+
+/* Utils
+   ========================================================================== */
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+}
+
+
+@font-face {
+  font-family: HukOpti;
+  src: url("../assets/hukOpti.otf") format("opentype");
+}
