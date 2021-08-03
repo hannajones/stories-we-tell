@@ -37,7 +37,7 @@ body, html {
   transition: all 0.2s ease-out;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link--active {
   color: #98cbff;
   text-transform: lowercase;
   font-family: 'HukOpti', serif;
@@ -119,6 +119,10 @@ body, html {
 
   .content-text {
     width: 80%;
+  }
+
+  .main-nav {
+    padding-bottom: 24px;
   }
 
   .nav-container {

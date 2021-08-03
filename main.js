@@ -30,18 +30,35 @@ var currentPage = '';
 var nav = document.getElementById('nav');
 var pageText = document.getElementById('page-text');
 
+function addClass(id, className) {
+  var element = document.getElementById(id);
+  if (!element.classList.contains(className)) {
+    element.classList.add(className);
+  }
+}
+
 function shrinkImage() {
   var shrinkClass = 'logo-shrink';
-  var image = document.getElementById('logo');
-  if (!image.classList.contains(shrinkClass)) {
-    image.classList.add('logo-shrink');
-  } 
+  var imageID = 'logo';
+  addClass(imageID, shrinkClass);
+}
+
+function highlightNavLink(navID) {
+  var activeNavClass = 'nav-link--active';
+
+  // remove the active style from any currently active links
+  var currentActiveLink = document.querySelector('.' + activeNavClass);
+  currentActiveLink && currentActiveLink.classList.remove(activeNavClass);
+
+  // apply the active class to the newly selected link
+  addClass(navID, activeNavClass);
 }
 
 function showPage(targetPage) {
   if (targetPage && targetPage !== currentPage && PAGE_CONTENT[targetPage]) {
     currentPage = targetPage;
     pageText.innerHTML = '<p class="fade-in"><span class="text-highlight">' + PAGE_CONTENT[currentPage] + '</span></p>' || '';
+    highlightNavLink(targetPage);
     shrinkImage();
   }
 }
