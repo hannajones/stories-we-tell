@@ -87,6 +87,7 @@ function showPage(targetPage) {
 
 function getRoute() {
   var test = window.location.hash.toLowerCase().replace(/\W/g, '') || '/';
+  console.log('sanity check', test)
   return test;
 }
 
