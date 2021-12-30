@@ -1,3 +1,4 @@
+// TODO: SEO stuff
 var PAGES = {
   who: 'who',
   what: 'what',
@@ -84,12 +85,18 @@ function showPage(targetPage) {
   }
 }
 
-nav.addEventListener('click', function (e) {
-  var targetPage = e.target.id;
-  showPage(targetPage);
-});
+function getRoute() {
+  var test = window.location.hash.toLowerCase().replace(/\W/g, '') || '/';
+  return test;
+}
 
-window.addEventListener('load', function () {
-  const initialPage = window.location.hash.replace(/\W/g, '');
-  showPage(initialPage);
-});
+function handleNavigation() {
+  var currentRoute = getRoute();
+  showPage(currentRoute);
+}
+
+// render new route when navigation to a new /# occurs
+window.addEventListener('hashchange', handleNavigation);
+
+// render page content on load
+window.addEventListener('load', handleNavigation);
