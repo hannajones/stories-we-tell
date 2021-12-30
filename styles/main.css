@@ -1,8 +1,9 @@
 /* Global
    ========================================================================== */
 
-body, html {
-  background-color: #f9d010;
+body,
+html {
+  background-color: #fbf4e1;
   font-family: sans-serif;
 }
 
@@ -13,7 +14,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0; 
+  padding: 0;
   padding: 8px;
   height: 50px;
 }
@@ -29,18 +30,18 @@ body, html {
 
 .nav-link {
   text-decoration: none;
-  color: #ff4e00;
+  color: #a9cf38;
   font-size: 30px;
   text-transform: lowercase;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   transition: all 0.2s ease-out;
 }
 
-.nav-link:hover, .nav-link--active {
-  color: #98cbff;
+.nav-link:hover,
+.nav-link--active {
   text-transform: lowercase;
-  font-family: 'HukOpti', serif;
+  font-weight: bold;
   font-size: 36px;
   text-shadow: 2px 1px black;
   transition: all 0.2s ease-in;
@@ -69,18 +70,24 @@ body, html {
 }
 
 .content-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 20px;
   text-align: justify;
   width: 60%;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 400;
   margin: 24px 0;
+  color: #4b775c;
 }
 
-.text-highlight {
-  background-color: #ffc4e8;
+.underline {
+  text-decoration: underline;
 }
+
+/* TODO: do we want to keep this effect? */
+/* .text-highlight {
+  background-color: #ffc4e8;
+} */
 
 /* Utils
    ========================================================================== */
@@ -102,11 +109,6 @@ body, html {
 
 .fade-in {
   animation: fadeIn ease 1.5s;
-}
-
-@font-face {
-  font-family: HukOpti;
-  src: url("../assets/hukOpti.otf") format("opentype");
 }
 
 /* Mobile
