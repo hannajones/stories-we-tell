@@ -58,7 +58,7 @@ html {
 }
 
 .logo {
-  max-height: 500px;
+  max-height: 400px;
   width: auto;
   transition: max-height 1s ease-out;
   margin: 16px 0;
