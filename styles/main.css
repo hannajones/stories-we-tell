@@ -4,7 +4,7 @@
 body,
 html {
   background-color: #fbf4e1;
-  font-family: sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* Navigation
@@ -34,7 +34,6 @@ html {
   font-size: 30px;
   text-transform: lowercase;
   font-weight: 500;
-  font-family: 'DM Sans', sans-serif;
   transition: all 0.2s ease-out;
 }
 
@@ -70,13 +69,17 @@ html {
 }
 
 .content-text {
-  font-family: 'DM Sans', sans-serif;
+  width: 60%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+p, a {
   font-size: 20px;
   text-align: justify;
-  width: 60%;
   line-height: 1.5;
   font-weight: 400;
-  margin: 24px 0;
   color: #4b775c;
 }
 
@@ -84,10 +87,9 @@ html {
   text-decoration: underline;
 }
 
-/* TODO: do we want to keep this effect? */
-/* .text-highlight {
-  background-color: #ffc4e8;
-} */
+.text-center {
+  text-align: center;
+}
 
 /* Utils
    ========================================================================== */
