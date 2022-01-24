@@ -32,7 +32,7 @@ var WHERE_MARKUP = `<p>The intention of this project is to confront roots of opp
 <p>Stories We Tell is operated on the land known as Tkaronto, “Toronto Purchase Treaty 13”. This area from time immemorial has been the traditional territories of the Huron-Wedat, the Haudenosaunee Confederacy, as well as the Anishinaabe Confederacies which includes seven Nations, including the current caretakers and treaty holders of this land, the Mississaugas of the Credit First Nation. This land is now home to many First Nation, Inuit and Metis communities. We are grateful to work on this land.</p>`;
 
 var CONTACT_MARKUP =
-  '<a href="mailto:stories_we_tell@outlook.com" class="text-center">stories_we_tell@outlook.com</a>';
+  '<p><a href="mailto:stories_we_tell@outlook.com" class="text-center">stories_we_tell@outlook.com</a></p>';
 
 var PAGE_CONTENT = {
   [PAGES.who]: WHO_MARKUP,
